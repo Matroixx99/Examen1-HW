@@ -1,0 +1,22 @@
+/*Fondo de página*/
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+}
+
+
+
+/* Estilo Registro */
+.Formulario {
+    background-color:aliceblue;
+    border: 3px rgb(6, 255, 40); 
+    border-style:solid;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.Titulos{
+    text-align: center;
+    padding: 10px;
+}
