@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Eventos</title>
-    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <main>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#Calendario">Calendario</a>
-            <a href="index.html#ListaEventos">Lista de Eventos</a>
-            <a href="Registro.html">Registro</a>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; color: #333;">
+    <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+
+        <Navegación>
+        <nav style="background-color: #0056b3; padding: 10px; text-align: center;">
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Inicio</a>
+            <a href="index.html#Calendario" style="color: white; text-decoration: none; margin: 0 15px;">Calendario</a>
+            <a href="index.html#ListaEventos" style="color: white; text-decoration: none; margin: 0 15px;">Lista de Eventos</a>
+            <a href="Registro.html" style="color: white; text-decoration: none; margin: 0 15px;">Registro</a>
         </nav>
 
-        <h2 class="Titulos">Registro para Eventos</h2>
+        <Título>
+        <h2 style="color: #0056b3; text-align: center; margin-top: 30px;">Registro para Eventos</h2>
 
+        <Formulario>
         <form action="RegistroComp.html">
-            <fieldset class="Formulario"> 
-                <legend>Datos del Alumno</legend>
-                
+            <fieldset style="border: 2px solid #0056b3; padding: 20px; background-color: white;">
+                <legend style="color: #0056b3; font-weight: bold;">Datos del Alumno</legend>
+
                 <label>Matrícula:</label><br>
-                <input type="text" minlength="9" maxlength="9" placeholder="Ej. 20240001" required><br><br>
+                <input type="text" minlength="9" maxlength="9" placeholder="Ej. 20240001" required style="width: 100%; padding: 5px;"><br><br>
 
                 <label>Apellido Paterno:</label><br>
-                <input type="text" required> <br><br>
+                <input type="text" required style="width: 100%; padding: 5px;"><br><br>
 
                 <label>Apellido Materno:</label><br>
-                <input type="text" required> <br><br>
+                <input type="text" required style="width: 100%; padding: 5px;"><br><br>
 
                 <label>Nombre(s):</label><br>
-                <input type="text" required> <br><br>
+                <input type="text" required style="width: 100%; padding: 5px;"><br><br>
 
                 <label>Correo Institucional:</label><br>
-                <input type="email" placeholder="@alumno.buap.mx" required> <br><br>
-                
+                <input type="email" placeholder="@alumno.buap.mx" required style="width: 100%; padding: 5px;"><br><br>
+
                 <label>¿A Qué Evento Deseas Participar?</label><br>
-                <select name="Eventos" id="EventosRegistro" required>
+                <select name="Eventos" id="EventosRegistro" required style="width: 100%; padding: 5px;">
                     <option value="" disabled selected>Selecciona una opción...</option>
                     <option value="E1">Feria de Bienvenida</option>
                     <option value="E2">Feria del Amor y la Amistad</option>
@@ -58,17 +61,19 @@
                     <option value="E17">Feria de Empleo</option>
                     <option value="E18">Encendido del Árbol</option>
                     <option value="E19">Feria Navideña</option>
-                </select> <br><br>
+                </select><br><br>
 
-                <input type="submit" value="Enviar Registro">
-                <input type="reset" value="Borrar todo">
+                <input type="submit" value="Enviar Registro" style="padding: 10px 20px; background-color: #0056b3; color: white; border: none; cursor: pointer; margin-right: 10px;">
+                <input type="reset" value="Borrar todo" style="padding: 10px 20px; background-color: #999; color: white; border: none; cursor: pointer;">
             </fieldset>
         </form>
-        
-        <footer>
+
+        <Footer>
+        <footer style="background-color: #0056b3; color: white; text-align: center; padding: 15px; margin-top: 50px;">
             <p>2026 Portal Universitario BUAP</p>
             <p>Contacto: Administracion@buap.mx</p>
         </footer>
+
     </main>
 </body>
 </html>
