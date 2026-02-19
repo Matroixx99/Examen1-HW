@@ -1,44 +1,44 @@
 Problemática
 En la institución existe desorganización en las actividades estudiantiles, ya que los estudiantes no conocen las fechas ni los eventos importantes.
 Esto provoca:
-*Baja participación en actividades
-* Falta de información
-* Confusión en fechas académicas
+Baja participación en actividades
+Falta de información
+Confusión en fechas académicas
 
 Objetivo
 Desarrollar un sitio web informativo que centralice los eventos escolares para que cualquier estudiante pueda consultar fácilmente las actividades próximas y registrarse para participar.
 
 Solución
 Se creó un portal web que contiene:
-* Calendario de eventos (tabla HTML)
-* Lista de próximos eventos
-* Formulario de registro para participar
+ Calendario de eventos (tabla HTML)
+Lista de próximos eventos
+Formulario de registro para participar
 El sitio funciona como un tablón digital accesible para todos los estudiantes.
 
 Roles del equipo
-* Integrante 1 – Project Manager / Frontend
-    * Creación del repositorio
-    * Gestión de issues
-    * Revisión de Pull Requests
-    * Sección calendario
-* Integrante 2 – Desarrollador Frontend
-    * Lista de eventos
-    * Formulario de registro
-    * Footer
+Integrante 1 – Project Manager / Frontend
+    Creación del repositorio
+    Gestión de issues
+    Revisión de Pull Requests
+    Sección calendario
+Integrante 2 – Desarrollador Frontend
+    Lista de eventos
+    Formulario de registro
+    Footer
 
 Tecnologías utilizadas
-* HTML5
-* Git
-* GitHub(Sin CSS)
+HTML5
+Git
+GitHub(Sin CSS)
 
 Estructura del sitio
 El sitio contiene:
-* Página principal
-* Navegación interna
-* 3 secciones
-* Tabla de calendario
-* Formulario
-* Footer
+Página principal
+Navegación interna
+3 secciones
+Tabla de calendario
+Formulario
+Footer
 
 Flujo de trabajo (Git)
 Cada integrante trabajó en su propia rama:
