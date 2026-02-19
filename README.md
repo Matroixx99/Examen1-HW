@@ -1,3 +1,5 @@
+Examen 1
+
 Problemática
 En la institución existe desorganización en las actividades estudiantiles, ya que los estudiantes no conocen las fechas ni los eventos importantes.
 Esto provoca:
@@ -16,12 +18,12 @@ Formulario de registro para participar
 El sitio funciona como un tablón digital accesible para todos los estudiantes.
 
 Roles del equipo
-Integrante 1 – Project Manager / Frontend
+Matthias Lara Ezpinoza 1 – Project Manager / Frontend
     Creación del repositorio
     Gestión de issues
     Revisión de Pull Requests
     Sección calendario
-Integrante 2 – Desarrollador Frontend
+Alexa Sarahi Carreon Cadena 2 – Desarrollador Frontend
     Lista de eventos
     Formulario de registro
     Footer
@@ -64,11 +66,11 @@ Commits
 Cada integrante realizó mínimo 3 commits en su rama antes del merge.
 
 Issues creados
-* Crear estructura base
-* Agregar calendario
-* Agregar lista de eventos
-* Agregar formulario
-* Resolver conflicto
+ Crear estructura base
+ Agregar calendario
+ Agregar lista de eventos
+ Agregar formulario
+ Resolver conflicto
 
 Resultado
 Se obtuvo un portal funcional que permite a los estudiantes conocer eventos escolares y registrarse, mejorando la organización académica.
