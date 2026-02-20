@@ -1,181 +1,244 @@
- <title>Portal Universitario</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Universitario</title>
+   
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333;">
     
-    <main>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="#Calendario">Calendario</a>
-            <a href="#ListaEventos">Eventos</a>
-            <a href="Registro.html">Registro</a>
+    <main style="padding: 20px;">
+        <nav style="margin-bottom: 20px; background-color: #0056b3; padding: 10px;">
+            <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none;">Inicio</a>
+            <a href="#Calendario" style="color: white; margin-right: 15px; text-decoration: none;">Calendario</a>
+            <a href="#ListaEventos" style="color: white; margin-right: 15px; text-decoration: none;">Eventos</a>
+            <a href="Registro.html" style="color: white; text-decoration: none;">Registro</a>
         </nav>
 
-        <h1 id="Titulo">Portal Universitario BUAP</h1>
+        <h1 id="Titulo"style="color: #0056b3;">Portal Universitario BUAP</h1>
 
-        <section id="Calendario">
+        <section id="Calendario" style="margin-bottom: 40px;">
             <h2>Calendario Académico 2026</h2>
             <p style="color: #666; font-size: 0.9em; margin-bottom: 20px;">
                 Los días marcados en <strong style="color: #0056b3;">azul</strong> indican eventos importantes. Pasa el cursor sobre ellos para ver el detalle.
             </p>
             
-            <div class="calendario-anual">
-                
-                <div class="mes">
-                    <h3>Enero</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div>
-                        <div class="dia evento" title="Feria de Bienvenida">20</div>
-                        <div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
+            <!-- Calendario anual -->
+            <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center; background-color: white;">
+                <Encabezado de meses>
+                <tr style="background-color: #0056b3; color: white;">
+                    <th>Enero</th>
+                    <th>Febrero</th>
+                    <th>Marzo</th>
+                    <th>Abril</th>
+                </tr>
+                <tr>
+                    <!--Enero-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                <td style="color:white; background-color:#0056b3;" title="Feria de Bienvenida">20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Febrero-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                                <td style="color:white; background-color:#0056b3;" title="Feria del Amor y la Amistad">14</td>
+                            </tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                                <td style="color:white; background-color:#0056b3;" title="Cine al Aire Libre">27</td>
+                                <td>28</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!--Marzo-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                                <td style="color:white; background-color:#0056b3;" title="Gran Hackaton">13</td>
+                                <td style="color:white; background-color:#0056b3;" title="Gran Hackaton">14</td>
+                            </tr>
+                            <tr><td style="color:white; background-color:#0056b3;" title="Gran Hackaton">15</td><td>16</td><td>17</td><td>18</td>
+                                <td style="color:white; background-color:#0056b3;" title="Festival de la Cultura">19</td><td>20</td><td>21</td>
+                            </tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Abril-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td style="color:white; background-color:#0056b3;" title="Evento Campus Verde">22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                                <td style="color:white; background-color:#0056b3;" title="Día de la Salud Integral">27</td><td>28</td>
+                            </tr>
+                            <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
 
-                <div class="mes">
-                    <h3>Febrero</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div>
-                        <div class="dia evento" title="Feria del Amor y la Amistad">14</div>
-                        <div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div>
-                        <div class="dia evento" title="Cine al Aire Libre">27</div>
-                        <div class="dia">28</div>
-                    </div>
-                </div>
+                <!--Siguiente bloque de meses Mayo a Agosto-->
+                <tr style="background-color: #0056b3; color: white;">
+                    <th>Mayo</th>
+                    <th>Junio</th>
+                    <th>Julio</th>
+                    <th>Agosto</th>
+                </tr>
+                <tr>
+                    <!--Mayo-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td style="color:white; background-color:#0056b3;" title="Festival Día del Estudiante">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Junio-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td>
+                                <td style="color:white; background-color:#0056b3;" title="Fiesta de Final de Curso">19</td>
+                                <td>20</td><td>21</td>
+                            </tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Julio-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <Agosto>
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                <td style="color:white; background-color:#0056b3;" title="Feria de Clubes y Talento Universitario">20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                                <td style="color:white; background-color:#0056b3;" title="Rally de Bienvenida Estudiantil">28</td>
+                            </tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
 
-                <div class="mes">
-                    <h3>Marzo</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div>
-                        <div class="dia evento" title="Gran Hackaton">13</div><div class="dia evento" title="Gran Hackaton">14</div><div class="dia evento" title="Gran Hackaton">15</div>
-                        <div class="dia">16</div><div class="dia">17</div><div class="dia">18</div>
-                        <div class="dia evento" title="Festival de la Cultura">19</div>
-                        <div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Abril</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div>
-                        <div class="dia evento" title="Evento Campus Verde">22</div>
-                        <div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div>
-                        <div class="dia evento" title="Día de la Salud Integral">27</div>
-                        <div class="dia">28</div><div class="dia">29</div><div class="dia">30</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Mayo</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div>
-                        <div class="dia evento" title="Festival Día del Estudiante">22</div>
-                        <div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Junio</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div>
-                        <div class="dia evento" title="Fiesta de Final de Curso">19</div>
-                        <div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Julio</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Agosto</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div>
-                        <div class="dia evento" title="Feria de Clubes y Talento">20</div>
-                        <div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div>
-                        <div class="dia evento" title="Rally de Bienvenida">28</div>
-                        <div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Septiembre</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div>
-                        <div class="dia evento" title="Noche Mexicana">15</div>
-                        <div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div>
-                        <div class="dia evento" title="Universiada Deportiva">21</div>
-                        <div class="dia">22</div><div class="dia">23</div>
-                        <div class="dia evento" title="Ted Talks: Qué será de mi futuro">24</div>
-                        <div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Octubre</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div>
-                        <div class="dia evento" title="Día de la Salud Mental">9</div>
-                        <div class="dia">10</div><div class="dia">11</div><div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div>
-                        <div class="dia evento" title="Concurso de Disfraces">30</div>
-                        <div class="dia">31</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Noviembre</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div>
-                        <div class="dia evento" title="Feria de Empleo">11</div>
-                        <div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div>
-                    </div>
-                </div>
-
-                <div class="mes">
-                    <h3>Diciembre</h3>
-                    <div class="dias-grid">
-                        <div class="dia">1</div>
-                        <div class="dia evento" title="Encendido del Árbol">2</div>
-                        <div class="dia">3</div><div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia">10</div>
-                        <div class="dia evento" title="Feria Navideña">11</div>
-                        <div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div><div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div><div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
-                    </div>
-                </div>
-
-            </div>
+                <!--Septiembre a Diciembre-->
+                <tr style="background-color: #0056b3; color: white;">
+                    <th>Septiembre</th>
+                    <th>Octubre</th>
+                    <th>Noviembre</th>
+                    <th>Diciembre</th>
+                </tr>
+                <tr>
+                    <!--Septiembre-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td style="color:white; background-color:#0056b3;" title="Noche Mexicana">15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                <td style="color:white; background-color:#0056b3;" title="Universiada Deportiva">21</td><td>22</td>
+                            </tr>
+                            <tr><td>23</td><td style="color:white; background-color:#0056b3;" title="Ted Talks: Qué será de mi futuro">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
+                            <tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <Octubre>
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td style="color:white; background-color:#0056b3;" title="Día de la Salud Mental">9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td style="color:white; background-color:#0056b3;" title="Concurso de Disfraces">30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Noviembre-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td style="color:white; background-color:#0056b3;" title="Feria de Empleo">11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                    <!--Diciembre-->
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td>1</td><td style="color:white; background-color:#0056b3;" title="Encendido del Árbol">2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td style="color:white; background-color:#0056b3;" title="Feria Navideña">11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </section>
 
-        <section id="ListaEventos">
-            <h2>Detalles de los Eventos</h2>
-            <div class="Evento"><strong>20 de Enero:</strong> Feria de Bienvenida</div>
-            <div class="Evento"><strong>14 de Febrero:</strong> Feria del Amor y la Amistad</div>
-            <div class="Evento"><strong>27 de Febrero:</strong> Cine al Aire Libre</div>
-            <div class="Evento"><strong>13 - 15 de Marzo:</strong> Gran Hackaton Entre Universidades</div>
-            <div class="Evento"><strong>19 de Marzo:</strong> Festival de la Cultura</div>
-            <div class="Evento"><strong>22 de Abril:</strong> Evento "Campus Verde"</div>
-            <div class="Evento"><strong>27 de Abril:</strong> Día de la Salud Integral</div>
-            <div class="Evento"><strong>22 de Mayo:</strong> Festival Día del Estudiante</div>
-            <div class="Evento"><strong>19 de Junio:</strong> Fiesta de Final de Curso</div>
-            <div class="Evento"><strong>20 de Agosto:</strong> Feria de Clubes y Talento Universitario</div>
-            <div class="Evento"><strong>28 de Agosto:</strong> Rally de Bienvenida Estudiantil</div>
-            <div class="Evento"><strong>15 de Septiembre:</strong> Evento "Noche Mexicana"</div>
-            <div class="Evento"><strong>21 de Septiembre:</strong> Universiada Deportiva</div>
-            <div class="Evento"><strong>24 de Septiembre:</strong> Ted Talks "¿Qué será de mi futuro?"</div>
-            <div class="Evento"><strong>9 de Octubre:</strong> Día de la Salud Mental</div>
-            <div class="Evento"><strong>30 de Octubre:</strong> Concurso de Disfraces y Casa del Terror</div>
-            <div class="Evento"><strong>11 de Noviembre:</strong> Feria de Empleo</div>
-            <div class="Evento"><strong>2 de Diciembre:</strong> Encendido del Árbol</div>
-            <div class="Evento"><strong>11 de Diciembre:</strong> Feria Navideña</div>
-        </section>
+        <section id="ListaEventos" style="margin-bottom: 40px;">
+    <h2>Detalles de los Eventos</h2>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; background-color: #f9f9f9;">
+        <tr style="background-color: #0056b3; color: white;">
+            <th style="text-align: left;">Fecha</th>
+            <th style="text-align: left;">Evento</th>
+        </tr>
+        <tr style="background-color: #72abe7; color: white;"><td>20 de Enero</td><td>Feria de Bienvenida</td></tr>
+        <tr><td>14 de Febrero</td><td>Feria del Amor y la Amistad</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>27 de Febrero</td><td>Cine al Aire Libre</td></tr>
+        <tr ><td>13 - 15 de Marzo</td><td>Gran Hackaton Entre Universidades</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>19 de Marzo</td><td>Festival de la Cultura</td></tr>
+        <tr><td>22 de Abril</td><td>Evento "Campus Verde"</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>27 de Abril</td><td>Día de la Salud Integral</td></tr>
+        <tr><td>22 de Mayo</td><td>Festival Día del Estudiante</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>19 de Junio</td><td>Fiesta de Final de Curso</td></tr>
+        <tr><td>20 de Agosto</td><td>Feria de Clubes y Talento Universitario</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>28 de Agosto</td><td>Rally de Bienvenida Estudiantil</td></tr>
+        <tr><td>15 de Septiembre</td><td>Evento "Noche Mexicana"</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>21 de Septiembre</td><td>Universiada Deportiva</td></tr>
+        <tr><td>24 de Septiembre</td><td>Ted Talks "¿Qué será de mi futuro?"</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>9 de Octubre</td><td>Día de la Salud Mental</td></tr>
+        <tr><td>30 de Octubre</td><td>Concurso de Disfraces y Casa del Terror</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>11 de Noviembre</td><td>Feria de Empleo</td></tr>
+        <tr><td>2 de Diciembre</td><td>Encendido del Árbol</td></tr>
+        <tr style="background-color: #72abe7; color: white;"><td>11 de Diciembre</td><td>Feria Navideña</td></tr>
+    </table>
+</section>
 
-        <section id="Registros">
+
+        <section id="Registros"style="margin-bottom: 40px;">
             <h2>Inscripciones</h2>
             <p>Participa en nuestras actividades registrándote aquí:</p>
-            <a href="Registro.html"><button type="button">Ir al Formulario de Registro</button></a>
+            <a href="Registro.html"><button type="button" style="padding: 10px 20px; background-color: #0056b3; color: white; border: none; cursor: pointer;">Ir al Formulario de Registro</button></a>
         </section>
 
-        <footer>
+        <footer style="background-color: #0056b3; color: white; padding: 10px; text-align: center;">
             <p> 2026 Benemérita Universidad Autónoma de Puebla.</p>
             <p>Facultad de Ciencias de la Computación | Contacto: Administracion@buap.mx</p>
         </footer>
